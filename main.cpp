@@ -4,6 +4,8 @@
 #include <vector>
 #include <filesystem>
 
+import audioprocessing;
+
 namespace UserInput {
 
     void getUserInput(auto& dataVar, auto minVal, auto maxVal) {
@@ -106,18 +108,6 @@ namespace ImageProc {
 
     void processFiles(std::vector<std::string>& filePathList) {
         std::cout << "Processing Image-files..." << std::endl;
-        // for each file in filepathlist: 
-            
-            // open file with FileIO namespace
-            
-            // process file 
-    }
-}
-
-namespace AudioProc {
-
-    void processFiles(std::vector<std::string>& filePathList) {
-        std::cout << "Processing Audio-files..." << std::endl;
         // for each file in filepathlist: 
             
             // open file with FileIO namespace

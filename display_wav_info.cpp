@@ -17,38 +17,23 @@ void display_wav_info(const WavFile& wav)
     std::cout << "Channels: " << info.channels << '\n';
     std::cout << "Sample rate: " << info.sample_rate << " Hz\n";
     std::cout << "Bits per sample:" << info.bits_per_sample << '\n';
-    std::cout << "Audio format: "
-    << (info.audio_format == 1 ? "PCM" : "IEEE Float")
-    << '\n';
-
+    std::cout << "Audio format: " << (info.audio_format == 1 ? "PCM" : "IEEE Float") << std::endl;
     std::cout << "Data size: " << info.data_size << " bytes\n";
 
-    const size_t num_frames =
-    wav.samples.size() / info.channels;
+    const size_t num_frames = wav.samples.size() / info.channels;
+    std::cout << "Audio frames: " << num_frames << std::endl;
 
-    std::cout << "Audio frames: " << num_frames << '\n';
-
-    const double duration =
-    static_cast<double>(num_frames) / info.sample_rate;
-
-    std::cout << "Duration: "
-    << std::fixed << std::setprecision(3)
-    << duration << " seconds\n";
+    const double duration = static_cast<double>(num_frames) / info.sample_rate;
+    std::cout << "Duration: " << std::fixed << std::setprecision(3) << duration << " seconds\n";
 
     // Display first 20 individual samples
-    const size_t num_samples =
-    std::min<size_t>(20, wav.samples.size());
-
-    std::cout << "\nFirst " << num_samples
-    << " audio samples:\n";
+    const size_t num_samples = std::min<size_t>(20, wav.samples.size());
+    std::cout << "\nFirst " << num_samples << " audio samples:\n";
 
     for (size_t i = 0; i < num_samples; ++i)
     {
-    std::cout << std::setw(4) << i
-    << ": "
-    << std::fixed << std::setprecision(6)
-    << wav.samples[i] << '\n';
+        std::cout << std::setw(4) << i << ": " << std::fixed << std::setprecision(6) 
+        << wav.samples[i] << std::endl;
     }
-
-    std::cout << "================================\n\n";
+    std::cout << "================================\n" << std::endl;
 }

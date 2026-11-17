@@ -7,7 +7,7 @@
 
 int main() {
     WavFile wav;
-    std::string fileaname = "text.wav";
+    std::string fileaname = "mytest.wav";
     try {
         parse_wav_file(fileaname, wav);
         

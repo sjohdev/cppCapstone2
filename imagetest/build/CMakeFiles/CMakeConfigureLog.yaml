@@ -1,0 +1,2674 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/badblob/coding/libtorch/libtorch/bin/"
+      - "/home/badblob/coding/libtorch/libtorch/sbin/"
+      - "/home/badblob/coding/libtorch/libtorch/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/home/badblob/coding/libtorch/libtorch/bin/uname"
+      - "/home/badblob/coding/libtorch/libtorch/sbin/uname"
+      - "/home/badblob/coding/libtorch/libtorch/uname"
+      - "/home/badblob/.pyenv/shims/uname"
+      - "/home/badblob/.pyenv/bin/uname"
+      - "/home/badblob/.local/bin/uname"
+      - "/home/badblob/bin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 7.3.4-200.fc44.x86_64 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/home/badblob/coding/libtorch/libtorch/bin/"
+      - "/home/badblob/coding/libtorch/libtorch/sbin/"
+      - "/home/badblob/coding/libtorch/libtorch/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/home/badblob/coding/libtorch/libtorch/bin/gmake"
+      - "/home/badblob/coding/libtorch/libtorch/sbin/gmake"
+      - "/home/badblob/coding/libtorch/libtorch/gmake"
+      - "/home/badblob/.pyenv/shims/gmake"
+      - "/home/badblob/.pyenv/bin/gmake"
+      - "/home/badblob/.local/bin/gmake"
+      - "/home/badblob/bin/gmake"
+      - "/usr/local/bin/gmake"
+    found: "/usr/bin/gmake"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/home/badblob/coding/libtorch/libtorch/bin/"
+      - "/home/badblob/coding/libtorch/libtorch/sbin/"
+      - "/home/badblob/coding/libtorch/libtorch/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/home/badblob/coding/libtorch/libtorch/bin/c++"
+      - "/home/badblob/coding/libtorch/libtorch/sbin/c++"
+      - "/home/badblob/coding/libtorch/libtorch/c++"
+      - "/home/badblob/.pyenv/shims/c++"
+      - "/home/badblob/.pyenv/bin/c++"
+      - "/home/badblob/.local/bin/c++"
+      - "/home/badblob/bin/c++"
+      - "/usr/local/bin/c++"
+    found: "/usr/bin/c++"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/4.3.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    found: "/usr/bin/ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    found: "/usr/bin/strip"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    found: "/usr/bin/ld"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    found: "/usr/bin/nm"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    found: "/usr/bin/objdump"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    found: "/usr/bin/objcopy"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    found: "/usr/bin/readelf"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/home/badblob/.pyenv/shims/dlltool"
+      - "/home/badblob/.pyenv/bin/dlltool"
+      - "/home/badblob/.local/bin/dlltool"
+      - "/home/badblob/bin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/bin/dlltool"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    found: "/usr/bin/addr2line"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/home/badblob/.pyenv/shims/tapi"
+      - "/home/badblob/.pyenv/bin/tapi"
+      - "/home/badblob/.local/bin/tapi"
+      - "/home/badblob/bin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/bin/tapi"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-16.2"
+      - "gcc-ar-16"
+      - "gcc-ar16"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-16.2"
+      - "/home/badblob/.pyenv/shims/gcc-ar-16.2"
+      - "/home/badblob/.pyenv/bin/gcc-ar-16.2"
+      - "/home/badblob/.local/bin/gcc-ar-16.2"
+      - "/home/badblob/bin/gcc-ar-16.2"
+      - "/usr/local/bin/gcc-ar-16.2"
+      - "/bin/gcc-ar-16.2"
+      - "/usr/bin/gcc-ar-16"
+      - "/home/badblob/.pyenv/shims/gcc-ar-16"
+      - "/home/badblob/.pyenv/bin/gcc-ar-16"
+      - "/home/badblob/.local/bin/gcc-ar-16"
+      - "/home/badblob/bin/gcc-ar-16"
+      - "/usr/local/bin/gcc-ar-16"
+      - "/bin/gcc-ar-16"
+      - "/usr/bin/gcc-ar16"
+      - "/home/badblob/.pyenv/shims/gcc-ar16"
+      - "/home/badblob/.pyenv/bin/gcc-ar16"
+      - "/home/badblob/.local/bin/gcc-ar16"
+      - "/home/badblob/bin/gcc-ar16"
+      - "/usr/local/bin/gcc-ar16"
+      - "/bin/gcc-ar16"
+    found: "/usr/bin/gcc-ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-16.2"
+      - "gcc-ranlib-16"
+      - "gcc-ranlib16"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/home/badblob/bin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-16.2"
+      - "/home/badblob/.pyenv/shims/gcc-ranlib-16.2"
+      - "/home/badblob/.pyenv/bin/gcc-ranlib-16.2"
+      - "/home/badblob/.local/bin/gcc-ranlib-16.2"
+      - "/home/badblob/bin/gcc-ranlib-16.2"
+      - "/usr/local/bin/gcc-ranlib-16.2"
+      - "/bin/gcc-ranlib-16.2"
+      - "/usr/bin/gcc-ranlib-16"
+      - "/home/badblob/.pyenv/shims/gcc-ranlib-16"
+      - "/home/badblob/.pyenv/bin/gcc-ranlib-16"
+      - "/home/badblob/.local/bin/gcc-ranlib-16"
+      - "/home/badblob/bin/gcc-ranlib-16"
+      - "/usr/local/bin/gcc-ranlib-16"
+      - "/bin/gcc-ranlib-16"
+      - "/usr/bin/gcc-ranlib16"
+      - "/home/badblob/.pyenv/shims/gcc-ranlib16"
+      - "/home/badblob/.pyenv/bin/gcc-ranlib16"
+      - "/home/badblob/.local/bin/gcc-ranlib16"
+      - "/home/badblob/bin/gcc-ranlib16"
+      - "/usr/local/bin/gcc-ranlib16"
+      - "/bin/gcc-ranlib16"
+    found: "/usr/bin/gcc-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-gnu0nb"
+      binary: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-gnu0nb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-gnu0nb'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_40ee3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_40ee3.dir/build.make CMakeFiles/cmTC_40ee3.dir/build
+        gmake[1]: Entering directory '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-gnu0nb'
+        Building CXX object CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,cobol,algol68,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-isl=/builddir/build/BUILD/gcc-16.2.1-build/gcc-16.2.1-20261029/obj-x86_64-redhat-linux/isl-install --enable-gnu-indirect-function --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none,amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-cet --with-tune=generic --with-tls=gnu2 --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_40ee3.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_40ee3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/cctkzwIG.s
+        GNU C++20 (GCC) version 16.2.1 20261029 (Red Hat 16.2.1-3) (x86_64-redhat-linux)
+        	compiled by GNU C version 16.2.1 20261029 (Red Hat 16.2.1-3), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/16/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/16/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16
+         /usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/backward
+         /usr/lib/gcc/x86_64-redhat-linux/16/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 6f0956bc1784865f31edfe643b14efab
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_40ee3.dir/'
+         as -v --64 -o CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o /tmp/cctkzwIG.s
+        GNU assembler version 2.46.1 (x86_64-redhat-linux) using BFD version version 2.46.1-1.fc44
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_40ee3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40ee3.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,cobol,algol68,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-isl=/builddir/build/BUILD/gcc-16.2.1-build/gcc-16.2.1-20261029/obj-x86_64-redhat-linux/isl-install --enable-gnu-indirect-function --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none,amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-cet --with-tune=generic --with-tls=gnu2 --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_40ee3' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_40ee3.'
+         /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYMscYb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_40ee3 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
+        collect2 version 16.2.1 20261029 (Red Hat 16.2.1-3)
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYMscYb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_40ee3 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
+        GNU ld version 2.46.1-1.fc44
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_40ee3' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_40ee3.'
+        /usr/bin/c++ -v -Wl,-v CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_40ee3
+        gmake[1]: Leaving directory '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-gnu0nb'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/x86_64-redhat-linux]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/backward]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/16/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16] ==> [/usr/include/c++/16]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/x86_64-redhat-linux] ==> [/usr/include/c++/16/x86_64-redhat-linux]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/backward] ==> [/usr/include/c++/16/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/16/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/16/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/16;/usr/include/c++/16/x86_64-redhat-linux;/usr/include/c++/16/backward;/usr/lib/gcc/x86_64-redhat-linux/16/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-gnu0nb']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_40ee3/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_40ee3.dir/build.make CMakeFiles/cmTC_40ee3.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-gnu0nb']
+        ignore line: [Building CXX object CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 cobol algol68 lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-isl=/builddir/build/BUILD/gcc-16.2.1-build/gcc-16.2.1-20261029/obj-x86_64-redhat-linux/isl-install --enable-gnu-indirect-function --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-cet --with-tune=generic --with-tls=gnu2 --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_40ee3.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_40ee3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/cctkzwIG.s]
+        ignore line: [GNU C++20 (GCC) version 16.2.1 20261029 (Red Hat 16.2.1-3) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 16.2.1 20261029 (Red Hat 16.2.1-3)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/16/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/16/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/16/../../../../include/c++/16/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/16/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 6f0956bc1784865f31edfe643b14efab]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_40ee3.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o /tmp/cctkzwIG.s]
+        ignore line: [GNU assembler version 2.46.1 (x86_64-redhat-linux) using BFD version version 2.46.1-1.fc44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_40ee3]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40ee3.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 cobol algol68 lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-isl=/builddir/build/BUILD/gcc-16.2.1-build/gcc-16.2.1-20261029/obj-x86_64-redhat-linux/isl-install --enable-gnu-indirect-function --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-cet --with-tune=generic --with-tls=gnu2 --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_40ee3' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_40ee3.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYMscYb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_40ee3 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/16/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccYMscYb.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_40ee3] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/16] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/16]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/16/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/16/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-latomic_asneeded] ==> lib [atomic_asneeded]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
+        ignore line: [collect2 version 16.2.1 20261029 (Red Hat 16.2.1-3)]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYMscYb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_40ee3 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_40ee3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/16] ==> [/usr/lib/gcc/x86_64-redhat-linux/16]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/16/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;atomic_asneeded;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/16;/usr/lib64;/lib64;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld version 2.46.1-1.fc44
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:8 (find_package)"
+    name: "OpenCV"
+    configs:
+      -
+        filename: "OpenCV.cps"
+        kind: "cps"
+      -
+        filename: "opencv.cps"
+        kind: "cps"
+      -
+        filename: "OpenCVConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "opencv-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "OpenCV"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "/usr/lib64/cmake/OpenCV/OpenCVConfig.cmake"
+      mode: "config"
+      version: "4.13.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Caffe2/public/mkl.cmake:1 (find_package)"
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:111 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    name: "MKL"
+    configs:
+      -
+        filename: "MKL.cps"
+        kind: "cps"
+      -
+        filename: "mkl.cps"
+        kind: "cps"
+      -
+        filename: "MKLConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "mkl-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "MKL"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/MKLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/mkl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/MKLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/mkl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/share/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/share/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/MKLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/mkl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib64/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib64/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/share/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/share/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/MKLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/mkl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib64/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib64/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/share/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/share/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/MKLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/mkl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib64/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib64/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/share/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/share/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/MKLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/mkl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib64/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib64/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/share/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/share/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/MKLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/mkl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib64/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib64/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/MKLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/mkl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/MKLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mkl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/lib64/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib64/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/share/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/share/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/MKLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/mkl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/lib64/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib64/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/share/cps/MKL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/share/cps/mkl.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Caffe2/public/mkldnn.cmake:7 (find_package)"
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:115 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    name: "MKLDNN"
+    configs:
+      -
+        filename: "MKLDNN.cps"
+        kind: "cps"
+      -
+        filename: "mkldnn.cps"
+        kind: "cps"
+      -
+        filename: "MKLDNNConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "mkldnn-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "MKLDNN"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/MKLDNNConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/mkldnn-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/MKLDNNConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/mkldnn-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/share/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/share/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/MKLDNNConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/mkldnn-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib64/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib64/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/lib/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/share/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/shims/share/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/MKLDNNConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/mkldnn-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib64/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib64/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/share/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/share/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/MKLDNNConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/mkldnn-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib64/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib64/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/share/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/share/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/MKLDNNConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/mkldnn-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib64/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib64/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/share/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/share/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/MKLDNNConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/mkldnn-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib64/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib64/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/MKLDNNConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/mkldnn-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/MKLDNNConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mkldnn-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/lib64/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib64/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/share/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/share/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/MKLDNNConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/mkldnn-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/lib64/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib64/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/share/cps/MKLDNN.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/share/cps/mkldnn.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_dependency)"
+      - "CMakeLists.txt:9 (find_package)"
+    name: "Caffe2"
+    configs:
+      -
+        filename: "Caffe2.cps"
+        kind: "cps"
+      -
+        filename: "caffe2.cps"
+        kind: "cps"
+      -
+        filename: "Caffe2Config.cmake"
+        kind: "cmake"
+      -
+        filename: "caffe2-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Caffe2"
+      search_paths:
+        - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/../Caffe2"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/Caffe2Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/caffe2-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/Caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/Caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/Caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/Caffe2Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/caffe2-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/Caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/Caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/share/cps/Caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/share/cps/caffe2.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "/home/badblob/coding/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake"
+      mode: "config"
+      version: ""
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:18 (find_library)"
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:64 (append_torchlib_if_found)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "c10_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c10"
+    candidate_directories:
+      - "/home/badblob/coding/libtorch/libtorch/lib/"
+      - "/home/badblob/coding/libtorch/libtorch/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+      - "/home/badblob/coding/libtorch/libtorch/lib/"
+    found: "/home/badblob/coding/libtorch/libtorch/lib/libc10.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:18 (find_library)"
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:119 (append_torchlib_if_found)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "kineto_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "kineto"
+    candidate_directories:
+      - "/home/badblob/coding/libtorch/libtorch/lib/"
+      - "/home/badblob/coding/libtorch/libtorch/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+      - "/home/badblob/coding/libtorch/libtorch/lib/"
+    searched_directories:
+      - "/home/badblob/coding/libtorch/libtorch/lib/"
+      - "/home/badblob/coding/libtorch/libtorch/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+      - "/home/badblob/coding/libtorch/libtorch/lib/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:144 (find_library)"
+      - "CMakeLists.txt:9 (find_package)"
+    mode: "library"
+    variable: "TORCH_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "torch"
+    candidate_directories:
+      - "/home/badblob/coding/libtorch/libtorch/lib/"
+      - "/home/badblob/coding/libtorch/libtorch/"
+      - "/home/badblob/.pyenv/shims/"
+      - "/home/badblob/.pyenv/bin/"
+      - "/home/badblob/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+      - "/home/badblob/coding/libtorch/libtorch/lib/"
+    found: "/home/badblob/coding/libtorch/libtorch/lib/libtorch.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:9 (find_package)"
+    name: "Torch"
+    configs:
+      -
+        filename: "Torch.cps"
+        kind: "cps"
+      -
+        filename: "torch.cps"
+        kind: "cps"
+      -
+        filename: "TorchConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "torch-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Torch"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/TorchConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/torch-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/Torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/Torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/Torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/TorchConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/torch-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/Torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/Torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/share/cps/Torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/coding/libtorch/libtorch/share/cps/torch.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake"
+      mode: "config"
+      version: "2.15.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/badblob/coding/libtorch/libtorch"
+      ENV{PATH}:
+        - "/home/badblob/.pyenv/shims"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.pyenv/bin"
+        - "/home/badblob/.local/bin"
+        - "/home/badblob/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...

@@ -40,9 +40,6 @@ imagetest: \
   /usr/lib64/libopencv_wechat_qrcode.so.4.13.0 \
   /usr/lib64/libopencv_xobjdetect.so.4.13.0 \
   /usr/lib64/libopencv_xphoto.so.4.13.0 \
-  /home/badblob/coding/libtorch/libtorch/lib/libtorch.so \
-  /home/badblob/coding/libtorch/libtorch/lib/libc10.so \
-  /usr/lib64/libgfortran.so.5 \
   /usr/lib64/libopencv_highgui.so.4.13.0 \
   /usr/lib64/libopencv_datasets.so.4.13.0 \
   /usr/lib64/libopencv_plot.so.4.13.0 \
@@ -62,9 +59,6 @@ imagetest: \
   /usr/lib64/libopencv_photo.so.4.13.0 \
   /usr/lib64/libopencv_imgproc.so.4.13.0 \
   /usr/lib64/libopencv_core.so.4.13.0 \
-  /home/badblob/coding/libtorch/libtorch/lib/libtorch.so \
-  /home/badblob/coding/libtorch/libtorch/lib/libtorch_cpu.so \
-  /home/badblob/coding/libtorch/libtorch/lib/libc10.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so \
@@ -108,8 +102,7 @@ imagetest: \
   /usr/lib64/libgstapp-1.0.so.0 \
   /usr/lib64/libgstpbutils-1.0.so.0 \
   /usr/lib64/libgstvideo-1.0.so.0 \
-  /lib64/libm.so.6 \
-  /home/badblob/coding/libtorch/libtorch/lib/libgomp.so.1 \
+  /usr/lib64/libgomp.so.1 \
   /usr/lib64/libQt6Widgets.so.6 \
   /usr/lib64/libQt6Gui.so.6 \
   /usr/lib64/libQt6Core.so.6 \
@@ -140,9 +133,6 @@ imagetest: \
   /usr/lib64/libvtkCommonMath.so.1 \
   /usr/lib64/libvtkCommonCore.so.1 \
   /usr/lib64/libvtksys.so.1 \
-  /usr/lib64/libdl.so.2 \
-  /usr/lib64/libpthread.so.0 \
-  /lib64/ld-linux-x86-64.so.2 \
   /usr/lib64/libQt6Test.so.6 \
   /usr/lib64/libQt6OpenGLWidgets.so.6 \
   /usr/lib64/libtesseract.so.5.5 \
@@ -170,7 +160,7 @@ imagetest: \
   /usr/lib64/libprotobuf.so.30 \
   /usr/lib64/libGLX.so.0 \
   /usr/lib64/libflexiblas.so.3 \
-  /usr/lib64/librt.so.1 \
+  /lib64/ld-linux-x86-64.so.2 \
   /usr/lib64/libdrm.so.2 \
   /usr/lib64/libgmodule-2.0.so.0 \
   /usr/lib64/libffi.so.8 \
@@ -348,6 +338,7 @@ imagetest: \
   /usr/lib64/libarrow_compute.so.2300 \
   /usr/lib64/libarrow.so.2300 \
   /usr/lib64/libXext.so.6 \
+  /usr/lib64/libgfortran.so.5 \
   /usr/lib64/libquadmath.so.0 \
   /usr/lib64/libdbus-1.so.3 \
   /usr/lib64/libicudata.so.77 \
@@ -700,12 +691,6 @@ CMakeFiles/imagetest.dir/test_imagep.cpp.o:
 
 /usr/lib64/libopencv_xphoto.so.4.13.0:
 
-/home/badblob/coding/libtorch/libtorch/lib/libtorch.so:
-
-/home/badblob/coding/libtorch/libtorch/lib/libc10.so:
-
-/usr/lib64/libgfortran.so.5:
-
 /usr/lib64/libopencv_highgui.so.4.13.0:
 
 /usr/lib64/libopencv_datasets.so.4.13.0:
@@ -743,12 +728,6 @@ CMakeFiles/imagetest.dir/test_imagep.cpp.o:
 /usr/lib64/libopencv_imgproc.so.4.13.0:
 
 /usr/lib64/libopencv_core.so.4.13.0:
-
-/home/badblob/coding/libtorch/libtorch/lib/libtorch.so:
-
-/home/badblob/coding/libtorch/libtorch/lib/libtorch_cpu.so:
-
-/home/badblob/coding/libtorch/libtorch/lib/libc10.so:
 
 /usr/lib/gcc/x86_64-redhat-linux/16/libstdc++.so:
 
@@ -836,9 +815,7 @@ CMakeFiles/imagetest.dir/test_imagep.cpp.o:
 
 /usr/lib64/libgstvideo-1.0.so.0:
 
-/lib64/libm.so.6:
-
-/home/badblob/coding/libtorch/libtorch/lib/libgomp.so.1:
+/usr/lib64/libgomp.so.1:
 
 /usr/lib64/libQt6Widgets.so.6:
 
@@ -900,12 +877,6 @@ CMakeFiles/imagetest.dir/test_imagep.cpp.o:
 
 /usr/lib64/libvtksys.so.1:
 
-/usr/lib64/libdl.so.2:
-
-/usr/lib64/libpthread.so.0:
-
-/lib64/ld-linux-x86-64.so.2:
-
 /usr/lib64/libQt6Test.so.6:
 
 /usr/lib64/libQt6OpenGLWidgets.so.6:
@@ -960,7 +931,7 @@ CMakeFiles/imagetest.dir/test_imagep.cpp.o:
 
 /usr/lib64/libflexiblas.so.3:
 
-/usr/lib64/librt.so.1:
+/lib64/ld-linux-x86-64.so.2:
 
 /usr/lib64/libdrm.so.2:
 
@@ -1315,6 +1286,8 @@ CMakeFiles/imagetest.dir/test_imagep.cpp.o:
 /usr/lib64/libarrow.so.2300:
 
 /usr/lib64/libXext.so.6:
+
+/usr/lib64/libgfortran.so.5:
 
 /usr/lib64/libquadmath.so.0:
 

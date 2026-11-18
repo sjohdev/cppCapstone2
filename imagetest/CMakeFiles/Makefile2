@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/badblob/coding/cppCapstone2/imagetest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/badblob/coding/cppCapstone2/imagetest/build
+CMAKE_BINARY_DIR = /home/badblob/coding/cppCapstone2/imagetest
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/imagetest.dir/clean
 CMakeFiles/imagetest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imagetest.dir/build.make CMakeFiles/imagetest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imagetest.dir/build.make CMakeFiles/imagetest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles --progress-num=1,2 "Built target imagetest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/badblob/coding/cppCapstone2/imagetest/CMakeFiles --progress-num=1,2 "Built target imagetest"
 .PHONY : CMakeFiles/imagetest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/imagetest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badblob/coding/cppCapstone2/imagetest/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/imagetest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/badblob/coding/cppCapstone2/imagetest/CMakeFiles 0
 .PHONY : CMakeFiles/imagetest.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ imagetest: CMakeFiles/imagetest.dir/rule
 # codegen rule for target.
 CMakeFiles/imagetest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imagetest.dir/build.make CMakeFiles/imagetest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles --progress-num=1,2 "Finished codegen for target imagetest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/badblob/coding/cppCapstone2/imagetest/CMakeFiles --progress-num=1,2 "Finished codegen for target imagetest"
 .PHONY : CMakeFiles/imagetest.dir/codegen
 
 # clean rule for target.

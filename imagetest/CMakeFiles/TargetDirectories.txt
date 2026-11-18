@@ -1,3 +1,0 @@
-/home/badblob/coding/cppCapstone2/imagetest/CMakeFiles/imagetest.dir
-/home/badblob/coding/cppCapstone2/imagetest/CMakeFiles/edit_cache.dir
-/home/badblob/coding/cppCapstone2/imagetest/CMakeFiles/rebuild_cache.dir

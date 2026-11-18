@@ -1,49 +1,29 @@
-cmake_minimum_required(VERSION 4.1.1)
-project(imagetest LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.18 FATAL_ERROR)
+project(imagetest)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
-
-find_package(OpenCV REQUIRED)
-#find_package(Torch REQUIRED)
-
-# System fortran runtime
-#set(GFORTRAN_LIBRARY "/usr/lib64/libgfortran.so.5")
-
-#if(NOT EXISTS "${GFORTRAN_LIBRARY}")
-#    message(FATAL ERROR "System libgfortran not found!")
-#endif()
+find_package(Torch REQUIRED)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 
 add_executable(imagetest test_imagep.cpp)
+target_link_libraries(imagetest "${TORCH_LIBRARIES}")
 
-target_include_directories(imagetest PRIVATE
-    ${OpenCV_INCLUDE_DIRS}
-#    ${TORCH_INCLUDE_DIRS}
-)
 
-#target_link_options(imagetest PRIVATE
-#    "-Wl,--no-as-needed"
+
+#cmake_minimum_required(VERSION 4.1.1)
+#project(imagetest LANGUAGES CXX)
+
+#set(CMAKE_CXX_STANDARD 17)
+#set(CMAKE_CXX_STANDARD_REQUIRED ON)
+#set(CMAKE_CXX_EXTENSIONS OFF)
+
+#find_package(OpenCV REQUIRED)
+
+#add_executable(imagetest test_imagep.cpp)
+
+#target_include_directories(imagetest PRIVATE
+#    ${OpenCV_INCLUDE_DIRS}
 #)
 
-target_link_libraries(imagetest PRIVATE
-    ${OpenCV_LIBS}
-#    ${TORCH_LIBRARIES}
-#    ${GFORTRAN_LIBRARY}
-)
-
-# LibTorch compiler flags
-#separate_arguments(TORCH_CXX_FLAGS_LIST
-#    NATIVE_COMMAND "${TORCH_CXX_FLAGS}"
+#target_link_libraries(imagetest PRIVATE
+#    ${OpenCV_LIBS}
 #)
-
-#target_compile_options(imagetest PRIVATE
-#    ${TORCH_CXX_FLAGS_LIST}
-#)
-
-# Runtime search path
-#set_target_properties(imagetest PROPERTIES
-#    BUILD_RPATH "usr/lib64"
-#    INSTALL_RPATH "/usr/lib64"
-#)
-

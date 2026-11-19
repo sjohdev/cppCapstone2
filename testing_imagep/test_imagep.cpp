@@ -5,7 +5,7 @@
 #include <string>
 #include <exception>
 
-//#include "image_test.h"
+// NOTE: This function was developed with the help of AI (chatGPT-6 Luna) 
 
 int main() {
     const std::string filename = "/home/badblob/coding/deeplearning/imsearch/data/spider2.jpg";
@@ -15,7 +15,7 @@ int main() {
     
     try {
     
-        // initiate PyTorch image-classifier
+        // load PyTorch image-classifier model
         
         // Read image
         // Load an image, transform it to a color image (if necessary)
@@ -26,34 +26,37 @@ int main() {
         << image.spectrum() 
         << std::endl;
         
-        // convert image to tensor
+        // Convert image to tensor
+        const int64_t width = image.width();
+        const int64_t height = image.height();
+        const int64_t channels = image.spectrum();
         
-        // 1. BGR to RGB
-        /*cv::cvtColor(img, img, cv::COLOR_BGR2RGB);
         
-        // 2. uint8 [0 255] to float [0 1]
-        img.convertTo(img, CV_32FC3, 1.0 / 255.0);
-        
-        // 3. create tensor
+        // 1. create tensor
         auto tensor = torch::from_blob(
-            img.data, 
-            {img.rows, img.cols, 3}, 
-            torch::TensorOptions().dtype(torch::kFloat32)
+            const_cast<unsigned char*>(image.data()), 
+            {channels, height, width}, 
+            torch::TensorOptions().dtype(torch::CppTypeToScalarType<unsigned char>::value).device(torch::kCPU)
             );
+        
+        // 2. clone to ensure independent memory ownership:
+        auto tensorClone = tensor.clone().to(torch::kFloat32).div_(255.0);
             
-        // 4. [Rows x Cols x Channels] to [Channels x Rows x Cols]
-        tensor = tensor.permute({2, 0, 1}).contiguous().clone();
+        // 2.5 [Rows x Cols x Channels] to [Channels x Rows x Cols]
+        //tensor = tensor.permute({2, 0, 1}).contiguous().clone();
         
-        // 5. Add batch dimension
-        tensor = tensor.unsqueeze(0);
         
-        std::cout << "Tensor shape: " << tensor.sizes() << std::endl;
+        
+        // 3. Add batch dimension
+        tensorClone = tensorClone.unsqueeze(0);
+        
+        std::cout << "Tensor shape: " << tensorClone.sizes() << std::endl;
         
         // classify image with Pytorch model
         
         
         // Display class label
-        */
+        
         
     }
     catch(const std::exception& e) {

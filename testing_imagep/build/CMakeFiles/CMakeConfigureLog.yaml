@@ -20,20 +20,16 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/home/badblob/coding/libtorch/libtorch/bin/"
-      - "/home/badblob/coding/libtorch/libtorch/sbin/"
-      - "/home/badblob/coding/libtorch/libtorch/"
       - "/home/badblob/.pyenv/shims/"
       - "/home/badblob/.pyenv/bin/"
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
       - "/bin/"
     searched_directories:
-      - "/home/badblob/coding/libtorch/libtorch/bin/uname"
-      - "/home/badblob/coding/libtorch/libtorch/sbin/uname"
-      - "/home/badblob/coding/libtorch/libtorch/uname"
       - "/home/badblob/.pyenv/shims/uname"
       - "/home/badblob/.pyenv/bin/uname"
       - "/home/badblob/.local/bin/uname"
@@ -41,8 +37,6 @@ events:
       - "/usr/local/bin/uname"
     found: "/usr/bin/uname"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -52,7 +46,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "message-v1"
     backtrace:
@@ -81,20 +76,15 @@ events:
       - "make"
       - "smake"
     candidate_directories:
-      - "/home/badblob/coding/libtorch/libtorch/bin/"
-      - "/home/badblob/coding/libtorch/libtorch/sbin/"
-      - "/home/badblob/coding/libtorch/libtorch/"
       - "/home/badblob/.pyenv/shims/"
       - "/home/badblob/.pyenv/bin/"
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     searched_directories:
-      - "/home/badblob/coding/libtorch/libtorch/bin/gmake"
-      - "/home/badblob/coding/libtorch/libtorch/sbin/gmake"
-      - "/home/badblob/coding/libtorch/libtorch/gmake"
       - "/home/badblob/.pyenv/shims/gmake"
       - "/home/badblob/.pyenv/bin/gmake"
       - "/home/badblob/.local/bin/gmake"
@@ -102,8 +92,6 @@ events:
       - "/usr/local/bin/gmake"
     found: "/usr/bin/gmake"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -113,7 +101,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -140,20 +129,15 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
-      - "/home/badblob/coding/libtorch/libtorch/bin/"
-      - "/home/badblob/coding/libtorch/libtorch/sbin/"
-      - "/home/badblob/coding/libtorch/libtorch/"
       - "/home/badblob/.pyenv/shims/"
       - "/home/badblob/.pyenv/bin/"
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     searched_directories:
-      - "/home/badblob/coding/libtorch/libtorch/bin/cc"
-      - "/home/badblob/coding/libtorch/libtorch/sbin/cc"
-      - "/home/badblob/coding/libtorch/libtorch/cc"
       - "/home/badblob/.pyenv/shims/cc"
       - "/home/badblob/.pyenv/bin/cc"
       - "/home/badblob/.local/bin/cc"
@@ -161,8 +145,6 @@ events:
       - "/usr/local/bin/cc"
     found: "/usr/bin/cc"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -172,7 +154,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -199,8 +182,6 @@ events:
       - "/usr/share/cmake/Modules/"
     found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -210,7 +191,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "message-v1"
     backtrace:
@@ -231,7 +213,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/4.3.0/CompilerIdC/a.out
+        /home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/4.3.0/CompilerIdC/a.out
       
   -
     kind: "find-v1"
@@ -259,11 +241,10 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     found: "/usr/bin/ar"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -273,7 +254,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -300,11 +282,10 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     found: "/usr/bin/ranlib"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -314,7 +295,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -341,11 +323,10 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     found: "/usr/bin/strip"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -355,7 +336,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -382,11 +364,10 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     found: "/usr/bin/ld"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -396,7 +377,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -423,11 +405,10 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     found: "/usr/bin/nm"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -437,7 +418,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -464,11 +446,10 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     found: "/usr/bin/objdump"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -478,7 +459,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -505,11 +487,10 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     found: "/usr/bin/objcopy"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -519,7 +500,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -546,11 +528,10 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     found: "/usr/bin/readelf"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -560,7 +541,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -587,7 +569,8 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     searched_directories:
       - "/usr/bin/dlltool"
       - "/home/badblob/.pyenv/shims/dlltool"
@@ -595,11 +578,10 @@ events:
       - "/home/badblob/.local/bin/dlltool"
       - "/home/badblob/bin/dlltool"
       - "/usr/local/bin/dlltool"
-      - "/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/sbin/dlltool"
     found: false
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -609,7 +591,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -636,11 +619,10 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     found: "/usr/bin/addr2line"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -650,7 +632,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -677,7 +660,8 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     searched_directories:
       - "/usr/bin/tapi"
       - "/home/badblob/.pyenv/shims/tapi"
@@ -685,11 +669,10 @@ events:
       - "/home/badblob/.local/bin/tapi"
       - "/home/badblob/bin/tapi"
       - "/usr/local/bin/tapi"
-      - "/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/sbin/tapi"
     found: false
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -699,7 +682,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -729,7 +713,8 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     searched_directories:
       - "/usr/bin/gcc-ar-16.2"
       - "/home/badblob/.pyenv/shims/gcc-ar-16.2"
@@ -737,25 +722,26 @@ events:
       - "/home/badblob/.local/bin/gcc-ar-16.2"
       - "/home/badblob/bin/gcc-ar-16.2"
       - "/usr/local/bin/gcc-ar-16.2"
-      - "/bin/gcc-ar-16.2"
+      - "/usr/local/sbin/gcc-ar-16.2"
+      - "/usr/sbin/gcc-ar-16.2"
       - "/usr/bin/gcc-ar-16"
       - "/home/badblob/.pyenv/shims/gcc-ar-16"
       - "/home/badblob/.pyenv/bin/gcc-ar-16"
       - "/home/badblob/.local/bin/gcc-ar-16"
       - "/home/badblob/bin/gcc-ar-16"
       - "/usr/local/bin/gcc-ar-16"
-      - "/bin/gcc-ar-16"
+      - "/usr/local/sbin/gcc-ar-16"
+      - "/usr/sbin/gcc-ar-16"
       - "/usr/bin/gcc-ar16"
       - "/home/badblob/.pyenv/shims/gcc-ar16"
       - "/home/badblob/.pyenv/bin/gcc-ar16"
       - "/home/badblob/.local/bin/gcc-ar16"
       - "/home/badblob/bin/gcc-ar16"
       - "/usr/local/bin/gcc-ar16"
-      - "/bin/gcc-ar16"
+      - "/usr/local/sbin/gcc-ar16"
+      - "/usr/sbin/gcc-ar16"
     found: "/usr/bin/gcc-ar"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -765,7 +751,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -795,7 +782,8 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-16.2"
       - "/home/badblob/.pyenv/shims/gcc-ranlib-16.2"
@@ -803,25 +791,26 @@ events:
       - "/home/badblob/.local/bin/gcc-ranlib-16.2"
       - "/home/badblob/bin/gcc-ranlib-16.2"
       - "/usr/local/bin/gcc-ranlib-16.2"
-      - "/bin/gcc-ranlib-16.2"
+      - "/usr/local/sbin/gcc-ranlib-16.2"
+      - "/usr/sbin/gcc-ranlib-16.2"
       - "/usr/bin/gcc-ranlib-16"
       - "/home/badblob/.pyenv/shims/gcc-ranlib-16"
       - "/home/badblob/.pyenv/bin/gcc-ranlib-16"
       - "/home/badblob/.local/bin/gcc-ranlib-16"
       - "/home/badblob/bin/gcc-ranlib-16"
       - "/usr/local/bin/gcc-ranlib-16"
-      - "/bin/gcc-ranlib-16"
+      - "/usr/local/sbin/gcc-ranlib-16"
+      - "/usr/sbin/gcc-ranlib-16"
       - "/usr/bin/gcc-ranlib16"
       - "/home/badblob/.pyenv/shims/gcc-ranlib16"
       - "/home/badblob/.pyenv/bin/gcc-ranlib16"
       - "/home/badblob/.local/bin/gcc-ranlib16"
       - "/home/badblob/bin/gcc-ranlib16"
       - "/usr/local/bin/gcc-ranlib16"
-      - "/bin/gcc-ranlib16"
+      - "/usr/local/sbin/gcc-ranlib16"
+      - "/usr/sbin/gcc-ranlib16"
     found: "/usr/bin/gcc-ranlib"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -831,7 +820,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -864,8 +854,6 @@ events:
       - "/usr/bin/"
     found: "/usr/bin/c++"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -875,7 +863,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -902,8 +891,6 @@ events:
       - "/usr/share/cmake/Modules/"
     found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -913,7 +900,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "message-v1"
     backtrace:
@@ -934,7 +922,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/4.3.0/CompilerIdCXX/a.out
+        /home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/4.3.0/CompilerIdCXX/a.out
       
   -
     kind: "find-v1"
@@ -965,7 +953,8 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     searched_directories:
       - "/usr/bin/gcc-ar-16.2"
       - "/home/badblob/.pyenv/shims/gcc-ar-16.2"
@@ -973,25 +962,26 @@ events:
       - "/home/badblob/.local/bin/gcc-ar-16.2"
       - "/home/badblob/bin/gcc-ar-16.2"
       - "/usr/local/bin/gcc-ar-16.2"
-      - "/bin/gcc-ar-16.2"
+      - "/usr/local/sbin/gcc-ar-16.2"
+      - "/usr/sbin/gcc-ar-16.2"
       - "/usr/bin/gcc-ar-16"
       - "/home/badblob/.pyenv/shims/gcc-ar-16"
       - "/home/badblob/.pyenv/bin/gcc-ar-16"
       - "/home/badblob/.local/bin/gcc-ar-16"
       - "/home/badblob/bin/gcc-ar-16"
       - "/usr/local/bin/gcc-ar-16"
-      - "/bin/gcc-ar-16"
+      - "/usr/local/sbin/gcc-ar-16"
+      - "/usr/sbin/gcc-ar-16"
       - "/usr/bin/gcc-ar16"
       - "/home/badblob/.pyenv/shims/gcc-ar16"
       - "/home/badblob/.pyenv/bin/gcc-ar16"
       - "/home/badblob/.local/bin/gcc-ar16"
       - "/home/badblob/bin/gcc-ar16"
       - "/usr/local/bin/gcc-ar16"
-      - "/bin/gcc-ar16"
+      - "/usr/local/sbin/gcc-ar16"
+      - "/usr/sbin/gcc-ar16"
     found: "/usr/bin/gcc-ar"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -1001,7 +991,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "find-v1"
     backtrace:
@@ -1031,7 +1022,8 @@ events:
       - "/home/badblob/.local/bin/"
       - "/home/badblob/bin/"
       - "/usr/local/bin/"
-      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-16.2"
       - "/home/badblob/.pyenv/shims/gcc-ranlib-16.2"
@@ -1039,25 +1031,26 @@ events:
       - "/home/badblob/.local/bin/gcc-ranlib-16.2"
       - "/home/badblob/bin/gcc-ranlib-16.2"
       - "/usr/local/bin/gcc-ranlib-16.2"
-      - "/bin/gcc-ranlib-16.2"
+      - "/usr/local/sbin/gcc-ranlib-16.2"
+      - "/usr/sbin/gcc-ranlib-16.2"
       - "/usr/bin/gcc-ranlib-16"
       - "/home/badblob/.pyenv/shims/gcc-ranlib-16"
       - "/home/badblob/.pyenv/bin/gcc-ranlib-16"
       - "/home/badblob/.local/bin/gcc-ranlib-16"
       - "/home/badblob/bin/gcc-ranlib-16"
       - "/usr/local/bin/gcc-ranlib-16"
-      - "/bin/gcc-ranlib-16"
+      - "/usr/local/sbin/gcc-ranlib-16"
+      - "/usr/sbin/gcc-ranlib-16"
       - "/usr/bin/gcc-ranlib16"
       - "/home/badblob/.pyenv/shims/gcc-ranlib16"
       - "/home/badblob/.pyenv/bin/gcc-ranlib16"
       - "/home/badblob/.local/bin/gcc-ranlib16"
       - "/home/badblob/bin/gcc-ranlib16"
       - "/usr/local/bin/gcc-ranlib16"
-      - "/bin/gcc-ranlib16"
+      - "/usr/local/sbin/gcc-ranlib16"
+      - "/usr/sbin/gcc-ranlib16"
     found: "/usr/bin/gcc-ranlib"
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -1067,7 +1060,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1077,8 +1071,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-c2c6SO"
-      binary: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-c2c6SO"
+      source: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-x3HZF9"
+      binary: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-x3HZF9"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -1088,13 +1082,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-c2c6SO'
+        Change Dir: '/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-x3HZF9'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_47734/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_47734.dir/build.make CMakeFiles/cmTC_47734.dir/build
-        gmake[1]: Entering directory '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-c2c6SO'
-        Building C object CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b3702/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b3702.dir/build.make CMakeFiles/cmTC_b3702.dir/build
+        gmake[1]: Entering directory '/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-x3HZF9'
+        Building C object CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -1104,8 +1098,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_47734.dir/'
-         /usr/libexec/gcc/x86_64-redhat-linux/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_47734.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccR3ifoZ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_b3702.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b3702.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccaofIj2.s
         GNU C23 (GCC) version 16.2.1 20261029 (Red Hat 16.2.1-3) (x86_64-redhat-linux)
         	compiled by GNU C version 16.2.1 20261029 (Red Hat 16.2.1-3), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.24-GMP
         
@@ -1119,14 +1113,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: d1619b6ceeb2b9790dd96e4a0319d480
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_47734.dir/'
-         as -v --64 -o CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o /tmp/ccR3ifoZ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_b3702.dir/'
+         as -v --64 -o CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o /tmp/ccaofIj2.s
         GNU assembler version 2.46.1 (x86_64-redhat-linux) using BFD version version 2.46.1-1.fc44
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_47734
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47734.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_b3702
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3702.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper
@@ -1139,14 +1133,14 @@ events:
         gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_47734' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_47734.'
-         /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYgV3kD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_47734 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b3702' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_b3702.'
+         /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrvGqta.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b3702 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
         collect2 version 16.2.1 20261029 (Red Hat 16.2.1-3)
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYgV3kD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_47734 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrvGqta.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b3702 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
         GNU ld version 2.46.1-1.fc44
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_47734' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_47734.'
-        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o -o cmTC_47734
-        gmake[1]: Leaving directory '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-c2c6SO'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b3702' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_b3702.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o -o cmTC_b3702
+        gmake[1]: Leaving directory '/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-x3HZF9'
         
       exitCode: 0
   -
@@ -1179,13 +1173,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-c2c6SO']
+        ignore line: [Change Dir: '/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-x3HZF9']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_47734/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_47734.dir/build.make CMakeFiles/cmTC_47734.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-c2c6SO']
-        ignore line: [Building C object CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b3702/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b3702.dir/build.make CMakeFiles/cmTC_b3702.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-x3HZF9']
+        ignore line: [Building C object CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -1195,8 +1189,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_47734.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_47734.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccR3ifoZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_b3702.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b3702.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccaofIj2.s]
         ignore line: [GNU C23 (GCC) version 16.2.1 20261029 (Red Hat 16.2.1-3) (x86_64-redhat-linux)]
         ignore line: [	compiled by GNU C version 16.2.1 20261029 (Red Hat 16.2.1-3)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -1210,14 +1204,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: d1619b6ceeb2b9790dd96e4a0319d480]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_47734.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o /tmp/ccR3ifoZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_b3702.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o /tmp/ccaofIj2.s]
         ignore line: [GNU assembler version 2.46.1 (x86_64-redhat-linux) using BFD version version 2.46.1-1.fc44]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_47734]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47734.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_b3702]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3702.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper]
@@ -1230,13 +1224,13 @@ events:
         ignore line: [gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_47734' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_47734.']
-        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYgV3kD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_47734 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b3702' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_b3702.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrvGqta.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b3702 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
           arg [/usr/libexec/gcc/x86_64-redhat-linux/16/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccYgV3kD.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccrvGqta.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -1252,7 +1246,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_47734] ==> ignore
+          arg [cmTC_b3702] ==> ignore
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o]
@@ -1264,7 +1258,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
           arg [-latomic_asneeded] ==> lib [atomic_asneeded]
@@ -1274,7 +1268,7 @@ events:
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
         ignore line: [collect2 version 16.2.1 20261029 (Red Hat 16.2.1-3)]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYgV3kD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_47734 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_47734.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrvGqta.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b3702 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b3702.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
         linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
@@ -1311,8 +1305,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-6wCtAA"
-      binary: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-6wCtAA"
+      source: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-1uJ714"
+      binary: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-1uJ714"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1323,13 +1317,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-6wCtAA'
+        Change Dir: '/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-1uJ714'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_262d8/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_262d8.dir/build.make CMakeFiles/cmTC_262d8.dir/build
-        gmake[1]: Entering directory '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-6wCtAA'
-        Building CXX object CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6e182/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6e182.dir/build.make CMakeFiles/cmTC_6e182.dir/build
+        gmake[1]: Entering directory '/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-1uJ714'
+        Building CXX object CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -1339,8 +1333,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_262d8.dir/'
-         /usr/libexec/gcc/x86_64-redhat-linux/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_262d8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccw2iP0T.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_6e182.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6e182.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccwx8s5S.s
         GNU C++20 (GCC) version 16.2.1 20261029 (Red Hat 16.2.1-3) (x86_64-redhat-linux)
         	compiled by GNU C version 16.2.1 20261029 (Red Hat 16.2.1-3), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.24-GMP
         
@@ -1357,14 +1351,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 6f0956bc1784865f31edfe643b14efab
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_262d8.dir/'
-         as -v --64 -o CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccw2iP0T.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_6e182.dir/'
+         as -v --64 -o CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccwx8s5S.s
         GNU assembler version 2.46.1 (x86_64-redhat-linux) using BFD version version 2.46.1-1.fc44
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_262d8
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_262d8.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_6e182
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e182.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper
@@ -1377,14 +1371,14 @@ events:
         gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_262d8' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_262d8.'
-         /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqiy1mY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_262d8 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6e182' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_6e182.'
+         /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJgxJXS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6e182 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
         collect2 version 16.2.1 20261029 (Red Hat 16.2.1-3)
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqiy1mY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_262d8 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJgxJXS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6e182 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
         GNU ld version 2.46.1-1.fc44
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_262d8' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_262d8.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_262d8
-        gmake[1]: Leaving directory '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-6wCtAA'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6e182' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_6e182.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6e182
+        gmake[1]: Leaving directory '/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-1uJ714'
         
       exitCode: 0
   -
@@ -1423,13 +1417,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-6wCtAA']
+        ignore line: [Change Dir: '/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-1uJ714']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_262d8/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_262d8.dir/build.make CMakeFiles/cmTC_262d8.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/CMakeScratch/TryCompile-6wCtAA']
-        ignore line: [Building CXX object CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6e182/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_6e182.dir/build.make CMakeFiles/cmTC_6e182.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/CMakeScratch/TryCompile-1uJ714']
+        ignore line: [Building CXX object CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -1439,8 +1433,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_262d8.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_262d8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccw2iP0T.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_6e182.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6e182.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccwx8s5S.s]
         ignore line: [GNU C++20 (GCC) version 16.2.1 20261029 (Red Hat 16.2.1-3) (x86_64-redhat-linux)]
         ignore line: [	compiled by GNU C version 16.2.1 20261029 (Red Hat 16.2.1-3)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -1457,14 +1451,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 6f0956bc1784865f31edfe643b14efab]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_262d8.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccw2iP0T.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_6e182.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccwx8s5S.s]
         ignore line: [GNU assembler version 2.46.1 (x86_64-redhat-linux) using BFD version version 2.46.1-1.fc44]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_262d8]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_262d8.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_6e182]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e182.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper]
@@ -1477,13 +1471,13 @@ events:
         ignore line: [gcc version 16.2.1 20261029 (Red Hat 16.2.1-3) (GCC) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_262d8' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_262d8.']
-        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqiy1mY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_262d8 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6e182' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_6e182.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJgxJXS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6e182 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
           arg [/usr/libexec/gcc/x86_64-redhat-linux/16/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccqiy1mY.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccJgxJXS.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -1499,7 +1493,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_262d8] ==> ignore
+          arg [cmTC_6e182] ==> ignore
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o]
@@ -1511,7 +1505,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1523,7 +1517,7 @@ events:
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
         ignore line: [collect2 version 16.2.1 20261029 (Red Hat 16.2.1-3)]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqiy1mY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_262d8 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_262d8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJgxJXS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6e182 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_6e182.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
@@ -1554,803 +1548,20 @@ events:
   -
     kind: "find_package-v1"
     backtrace:
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Caffe2/public/mkl.cmake:1 (find_package)"
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:111 (include)"
-      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
-      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_dependency)"
       - "CMakeLists.txt:4 (find_package)"
-    name: "MKL"
+    name: "OpenCV"
     configs:
       -
-        filename: "MKL.cps"
+        filename: "OpenCV.cps"
         kind: "cps"
       -
-        filename: "mkl.cps"
+        filename: "opencv.cps"
         kind: "cps"
       -
-        filename: "MKLConfig.cmake"
+        filename: "OpenCVConfig.cmake"
         kind: "cmake"
       -
-        filename: "mkl-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "optional"
-      quiet: true
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "MKL"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/MKLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/mkl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/MKLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/mkl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/share/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/share/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/MKLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/mkl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/lib64/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/lib64/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/lib/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/lib/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/share/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/share/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/MKLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/mkl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/lib64/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/lib64/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/lib/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/lib/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/share/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/share/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/MKLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/mkl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/lib64/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/lib64/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/lib/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/lib/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/share/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/share/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/MKLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/mkl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/lib64/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/lib64/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/lib/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/lib/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/share/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/share/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/MKLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/mkl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib64/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib64/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/share/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/share/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/MKLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/mkl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib64/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib64/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/share/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/share/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/MKLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/mkl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/lib64/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/lib64/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/lib/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/lib/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/share/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/share/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/MKLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/mkl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/lib64/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/lib64/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/lib/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/lib/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/share/cps/MKL.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/share/cps/mkl.cps"
-        mode: "cps"
-        reason: "no_exist"
-    found: null
-    search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
-      ENV{PATH}:
-        - "/home/badblob/.pyenv/shims"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.local/bin"
-        - "/home/badblob/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Caffe2/public/mkldnn.cmake:7 (find_package)"
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:115 (include)"
-      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
-      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_dependency)"
-      - "CMakeLists.txt:4 (find_package)"
-    name: "MKLDNN"
-    configs:
-      -
-        filename: "MKLDNN.cps"
-        kind: "cps"
-      -
-        filename: "mkldnn.cps"
-        kind: "cps"
-      -
-        filename: "MKLDNNConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "mkldnn-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "optional"
-      quiet: true
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "MKLDNN"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/MKLDNNConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/mkldnn-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/MKLDNNConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/mkldnn-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/share/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/share/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/MKLDNNConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/mkldnn-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/lib64/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/lib64/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/lib/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/lib/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/share/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/shims/share/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/MKLDNNConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/mkldnn-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/lib64/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/lib64/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/lib/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/lib/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/share/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.pyenv/share/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/MKLDNNConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/mkldnn-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/lib64/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/lib64/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/lib/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/lib/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/share/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/.local/share/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/MKLDNNConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/mkldnn-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/lib64/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/lib64/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/lib/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/lib/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/share/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/share/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/MKLDNNConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/mkldnn-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib64/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib64/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/share/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/share/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/MKLDNNConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/mkldnn-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib64/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib64/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/share/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/share/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/MKLDNNConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/mkldnn-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/lib64/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/lib64/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/lib/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/lib/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/share/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/share/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/MKLDNNConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/mkldnn-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/lib64/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/lib64/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/lib/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/lib/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/share/cps/MKLDNN.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/share/cps/mkldnn.cps"
-        mode: "cps"
-        reason: "no_exist"
-    found: null
-    search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
-      ENV{PATH}:
-        - "/home/badblob/.pyenv/shims"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.local/bin"
-        - "/home/badblob/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
-      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_dependency)"
-      - "CMakeLists.txt:4 (find_package)"
-    name: "Caffe2"
-    configs:
-      -
-        filename: "Caffe2.cps"
-        kind: "cps"
-      -
-        filename: "caffe2.cps"
-        kind: "cps"
-      -
-        filename: "Caffe2Config.cmake"
-        kind: "cmake"
-      -
-        filename: "caffe2-config.cmake"
+        filename: "opencv-config.cmake"
         kind: "cmake"
     version_request:
       exact: false
@@ -2361,9 +1572,7 @@ events:
       policy_scope: true
       bypass_provider: false
       names:
-        - "Caffe2"
-      search_paths:
-        - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/../Caffe2"
+        - "OpenCV"
       path_suffixes:
         - ""
       paths:
@@ -2378,76 +1587,311 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/Caffe2Config.cmake"
+        path: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/pkgRedirects/OpenCVConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/caffe2-config.cmake"
+        path: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/pkgRedirects/opencv-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/Caffe2.cps"
+        path: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/pkgRedirects/lib64/cps/OpenCV.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/caffe2.cps"
+        path: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/pkgRedirects/lib64/cps/opencv.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/Caffe2.cps"
+        path: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/pkgRedirects/lib/cps/OpenCV.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/caffe2.cps"
+        path: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/pkgRedirects/lib/cps/opencv.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/Caffe2.cps"
+        path: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/pkgRedirects/share/cps/OpenCV.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/caffe2.cps"
+        path: "/home/badblob/coding/cppCapstone2/testing_imagep/build/CMakeFiles/pkgRedirects/share/cps/opencv.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/libtorch/libtorch/Caffe2Config.cmake"
+        path: "/home/badblob/.pyenv/shims/OpenCVConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/libtorch/libtorch/caffe2-config.cmake"
+        path: "/home/badblob/.pyenv/shims/opencv-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/Caffe2.cps"
+        path: "/home/badblob/.pyenv/shims/lib64/cps/OpenCV.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/caffe2.cps"
+        path: "/home/badblob/.pyenv/shims/lib64/cps/opencv.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/Caffe2.cps"
+        path: "/home/badblob/.pyenv/shims/lib/cps/OpenCV.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/caffe2.cps"
+        path: "/home/badblob/.pyenv/shims/lib/cps/opencv.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/libtorch/libtorch/share/cps/Caffe2.cps"
+        path: "/home/badblob/.pyenv/shims/share/cps/OpenCV.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/badblob/coding/libtorch/libtorch/share/cps/caffe2.cps"
+        path: "/home/badblob/.pyenv/shims/share/cps/opencv.cps"
         mode: "cps"
         reason: "no_exist"
-    found:
-      path: "/home/badblob/coding/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake"
-      mode: "config"
-      version: ""
+      -
+        path: "/home/badblob/.pyenv/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.pyenv/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/.local/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/badblob/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/OpenCV/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/OpenCV/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib64/cmake/OpenCV/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/lib64/cmake/OpenCV/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/OpenCVConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/opencv-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/lib64/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib64/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/share/cps/OpenCV.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/share/cps/opencv.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
     search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
       ENV{PATH}:
         - "/home/badblob/.pyenv/shims"
         - "/home/badblob/.pyenv/bin"
@@ -2457,353 +1901,8 @@ events:
         - "/home/badblob/bin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:18 (find_library)"
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:64 (append_torchlib_if_found)"
-      - "CMakeLists.txt:4 (find_package)"
-    mode: "library"
-    variable: "c10_LIBRARY"
-    description: "Path to a library."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "c10"
-    candidate_directories:
-      - "/home/badblob/coding/libtorch/libtorch/lib/"
-      - "/home/badblob/coding/libtorch/libtorch/"
-      - "/home/badblob/.pyenv/shims/"
-      - "/home/badblob/.pyenv/bin/"
-      - "/home/badblob/.local/bin/"
-      - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/local/lib64/"
-      - "/usr/local/lib/"
-      - "/usr/local/"
-      - "/usr/lib64/"
-      - "/usr/lib/"
-      - "/usr/"
-      - "/lib64/"
-      - "/lib/"
-      - "/opt/"
-      - "/usr/lib64/X11/"
-      - "/home/badblob/coding/libtorch/libtorch/lib/"
-    found: "/home/badblob/coding/libtorch/libtorch/lib/libc10.so"
-    search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
-      ENV{PATH}:
-        - "/home/badblob/.pyenv/shims"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.local/bin"
-        - "/home/badblob/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "/usr/lib/X11"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:18 (find_library)"
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:119 (append_torchlib_if_found)"
-      - "CMakeLists.txt:4 (find_package)"
-    mode: "library"
-    variable: "kineto_LIBRARY"
-    description: "Path to a library."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "kineto"
-    candidate_directories:
-      - "/home/badblob/coding/libtorch/libtorch/lib/"
-      - "/home/badblob/coding/libtorch/libtorch/"
-      - "/home/badblob/.pyenv/shims/"
-      - "/home/badblob/.pyenv/bin/"
-      - "/home/badblob/.local/bin/"
-      - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/local/lib64/"
-      - "/usr/local/lib/"
-      - "/usr/local/"
-      - "/usr/lib64/"
-      - "/usr/lib/"
-      - "/usr/"
-      - "/lib64/"
-      - "/lib/"
-      - "/opt/"
-      - "/usr/lib64/X11/"
-      - "/home/badblob/coding/libtorch/libtorch/lib/"
-    searched_directories:
-      - "/home/badblob/coding/libtorch/libtorch/lib/"
-      - "/home/badblob/coding/libtorch/libtorch/"
-      - "/home/badblob/.pyenv/shims/"
-      - "/home/badblob/.pyenv/bin/"
-      - "/home/badblob/.local/bin/"
-      - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/local/lib64/"
-      - "/usr/local/lib/"
-      - "/usr/local/"
-      - "/usr/lib64/"
-      - "/usr/lib/"
-      - "/usr/"
-      - "/lib64/"
-      - "/lib/"
-      - "/opt/"
-      - "/usr/lib64/X11/"
-      - "/home/badblob/coding/libtorch/libtorch/lib/"
-    found: false
-    search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
-      ENV{PATH}:
-        - "/home/badblob/.pyenv/shims"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.local/bin"
-        - "/home/badblob/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "/usr/lib/X11"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:144 (find_library)"
-      - "CMakeLists.txt:4 (find_package)"
-    mode: "library"
-    variable: "TORCH_LIBRARY"
-    description: "Path to a library."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "torch"
-    candidate_directories:
-      - "/home/badblob/coding/libtorch/libtorch/lib/"
-      - "/home/badblob/coding/libtorch/libtorch/"
-      - "/home/badblob/.pyenv/shims/"
-      - "/home/badblob/.pyenv/bin/"
-      - "/home/badblob/.local/bin/"
-      - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/local/lib64/"
-      - "/usr/local/lib/"
-      - "/usr/local/"
-      - "/usr/lib64/"
-      - "/usr/lib/"
-      - "/usr/"
-      - "/lib64/"
-      - "/lib/"
-      - "/opt/"
-      - "/usr/lib64/X11/"
-      - "/home/badblob/coding/libtorch/libtorch/lib/"
-    found: "/home/badblob/coding/libtorch/libtorch/lib/libtorch.so"
-    search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
-      ENV{PATH}:
-        - "/home/badblob/.pyenv/shims"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.local/bin"
-        - "/home/badblob/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "/usr/lib/X11"
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:4 (find_package)"
-    name: "Torch"
-    configs:
-      -
-        filename: "Torch.cps"
-        kind: "cps"
-      -
-        filename: "torch.cps"
-        kind: "cps"
-      -
-        filename: "TorchConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "torch-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "Torch"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/TorchConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/torch-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/Torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib64/cps/torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/Torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/lib/cps/torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/Torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/cppCapstone2/imagetest/build/CMakeFiles/pkgRedirects/share/cps/torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/TorchConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/torch-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/Torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib64/cps/torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/Torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/lib/cps/torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/share/cps/Torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/badblob/coding/libtorch/libtorch/share/cps/torch.cps"
-        mode: "cps"
-        reason: "no_exist"
-    found:
-      path: "/home/badblob/coding/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake"
-      mode: "config"
-      version: "2.15.0"
-    search_context:
-      CMAKE_PREFIX_PATH:
-        - "/home/badblob/coding/libtorch/libtorch"
-      ENV{PATH}:
-        - "/home/badblob/.pyenv/shims"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.pyenv/bin"
-        - "/home/badblob/.local/bin"
-        - "/home/badblob/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"

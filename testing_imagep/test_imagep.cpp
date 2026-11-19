@@ -1,6 +1,6 @@
 
-#include <opencv2/opencv.hpp>
 //#include <torch/torch.h>
+#include <opencv2/opencv.hpp>
 #include <iostream>
 #include <string>
 #include <exception>
@@ -9,6 +9,12 @@
 
 int main() {
     std::string filename = "/home/badblob/coding/deeplearning/imsearch/data/spider2.jpg";
+    
+    
+    //torch::Tensor tensor = torch::rand({2, 3});
+    //std::cout << tensor << std::endl;
+    
+    
     try {
     
         // initiate PyTorch image-classifier
@@ -50,8 +56,8 @@ int main() {
         // classify image with Pytorch model
         
         
-        // Display class label*/
-        
+        // Display class label
+        */
         
     }
     catch(const std::exception& e) {

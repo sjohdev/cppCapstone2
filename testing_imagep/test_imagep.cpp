@@ -1,6 +1,6 @@
 
-//#include <torch/torch.h>
-#include <opencv2/opencv.hpp>
+#include <torch/torch.h>
+#include "CImg.h"
 #include <iostream>
 #include <string>
 #include <exception>
@@ -8,27 +8,23 @@
 //#include "image_test.h"
 
 int main() {
-    std::string filename = "/home/badblob/coding/deeplearning/imsearch/data/spider2.jpg";
+    const std::string filename = "/home/badblob/coding/deeplearning/imsearch/data/spider2.jpg";
     
-    
-    //torch::Tensor tensor = torch::rand({2, 3});
-    //std::cout << tensor << std::endl;
-    
+    torch::Tensor tensor = torch::rand({2, 3});
+    std::cout << tensor << std::endl;
     
     try {
     
         // initiate PyTorch image-classifier
         
         // Read image
-        cv::Mat img = cv::imread(filename);
-        if (img.empty()) {
-            std::cout << "Failed to load image. Exiting" << std::endl;
-            return 1;
-        }
-        else {
-            std::cout << "Image loaded successfully!" << std::endl;
-            return 0;
-        }
+        // Load an image, transform it to a color image (if necessary)
+        cimg_library::CImg<unsigned char> image(filename.c_str());
+        std::cout << "image dimensions: " 
+        << image.width() << " x " 
+        << image.height() << " x " 
+        << image.spectrum() 
+        << std::endl;
         
         // convert image to tensor
         

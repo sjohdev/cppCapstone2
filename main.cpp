@@ -5,6 +5,7 @@
 #include <filesystem>
 
 import audioprocessing;
+import imageprocessing;
 
 namespace UserInput {
 
@@ -101,18 +102,6 @@ namespace Utility {
             std::cerr << "Error: Directory not found." << std::endl;
         }
         return fileCount;
-    }
-}
-
-namespace ImageProc {
-
-    void processFiles(std::vector<std::string>& filePathList) {
-        std::cout << "Processing Image-files..." << std::endl;
-        // for each file in filepathlist: 
-            
-            // open file with FileIO namespace
-            
-            // process file 
     }
 }
 

@@ -15,7 +15,6 @@ module;
 #include <algorithm>
 #include <exception>
 
-
 module audioprocessing;
 
 // Functions for reading wav files and retrieveng the meta-data and audio samples
@@ -373,3 +372,4 @@ namespace AudioProc {
         }
     }
 }
+

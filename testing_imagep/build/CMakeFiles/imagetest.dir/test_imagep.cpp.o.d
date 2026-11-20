@@ -5175,6 +5175,34 @@ CMakeFiles/imagetest.dir/test_imagep.cpp.o: \
  /home/badblob/coding/libtorch/libtorch/include/torch/csrc/api/include/torch/version.h \
  /home/badblob/coding/libtorch/libtorch/include/torch/headeronly/version.h \
  /home/badblob/coding/libtorch/libtorch/include/torch/csrc/api/include/torch/xpu.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/script.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/autograd/InferenceMode.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/runtime/custom_operator.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/serialization/import.h \
+ /home/badblob/coding/libtorch/libtorch/include/caffe2/serialize/inline_container.h \
+ /usr/include/c++/16/fstream \
+ /usr/include/c++/16/x86_64-redhat-linux/bits/basic_file.h \
+ /usr/include/c++/16/x86_64-redhat-linux/bits/c++io.h \
+ /usr/include/c++/16/bits/fstream.tcc \
+ /home/badblob/coding/libtorch/libtorch/include/caffe2/serialize/istream_adapter.h \
+ /home/badblob/coding/libtorch/libtorch/include/caffe2/serialize/read_adapter_interface.h \
+ /home/badblob/coding/libtorch/libtorch/include/caffe2/serialize/versions.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/serialization/pickle.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/serialization/pickler.h \
+ /home/badblob/coding/libtorch/libtorch/include/c10/util/FbcodeMaps.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/serialization/pickler_helper.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/serialization/unpickler.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/frontend/script_type_parser.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/frontend/resolver.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/frontend/sugared_value.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/frontend/error_report.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/frontend/tree.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/frontend/lexer.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/frontend/parser_constants.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/frontend/strtod.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/frontend/schema_matching.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/frontend/versioned_symbols.h \
+ /home/badblob/coding/libtorch/libtorch/include/torch/csrc/jit/frontend/tree_views.h \
  /home/badblob/coding/cppCapstone2/testing_imagep/../CImg/CImg.h \
  /usr/include/c++/16/cstdarg /usr/include/c++/16/cfloat \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/float.h \

@@ -1,0 +1,14 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/cap2.dir/audioprocessing_impl.cpp.o",
+"requires": [
+{
+"logical-name": "audioprocessing"
+}
+]
+}
+],
+"version": 0,
+"revision": 0
+}

@@ -1,0 +1,13 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/cap2.dir/main.cpp.o: dyndep | CMakeFiles/cap2.dir/imageprocessing.gcm CMakeFiles/cap2.dir/audioprocessing.gcm
+
+build CMakeFiles/cap2.dir/imageprocessing_impl.cpp.o: dyndep | CMakeFiles/cap2.dir/imageprocessing.gcm
+
+build CMakeFiles/cap2.dir/audioprocessing_impl.cpp.o: dyndep | CMakeFiles/cap2.dir/audioprocessing.gcm
+
+build CMakeFiles/cap2.dir/imageprocessing.cppm.o | CMakeFiles/cap2.dir/imageprocessing.gcm: dyndep
+  restat = 1
+
+build CMakeFiles/cap2.dir/audioprocessing.cppm.o | CMakeFiles/cap2.dir/audioprocessing.gcm: dyndep
+  restat = 1
+

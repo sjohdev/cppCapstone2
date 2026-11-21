@@ -1,0 +1,18 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/cap2.dir/main.cpp.o",
+"requires": [
+{
+"logical-name": "imageprocessing"
+}
+,
+{
+"logical-name": "audioprocessing"
+}
+]
+}
+],
+"version": 0,
+"revision": 0
+}

@@ -1,0 +1,17 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/cap2.dir/audioprocessing.cppm.o",
+"provides": [
+{
+"logical-name": "audioprocessing",
+"is-interface": true
+}
+],
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

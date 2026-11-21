@@ -6,6 +6,7 @@ module;
 #include <iostream>
 #include <string>
 #include <vector>
+#include <map>
 #include <exception>
 #include <cmath>
 #include <stdexcept>
@@ -101,11 +102,47 @@ namespace ImageProc {
 
         return img;
     }
+    
+    void printLabelMap(const std::map<std::string, int>& map) {
+        std::cout << "\nImage classification complete. Predicted image-labels: \n" << std::endl;
+        for (const auto& [key, value] : map) {
+            // Display class label
+            std::cout << key << ": " << value << std::endl;
+        }
+    }
 
-    void processFiles(std::vector<std::string>& filePathList) {
+    torch::Tensor CImg2tensor(const cimg_library::CImg<unsigned char>& image) {
+        // 1. create tensor
+        const int64_t cols = image.width();
+        const int64_t rows = image.height();
+        const int64_t channels = image.spectrum();
+        
+        auto tensor = torch::from_blob(
+            const_cast<unsigned char*>(image.data()), 
+            {channels, rows, cols}, 
+            torch::TensorOptions()
+            .dtype(torch::CppTypeToScalarType<unsigned char>::value)
+            .device(torch::kCPU)
+            );
+        
+        // 2. clone to ensure independent memory ownership:
+        torch::Tensor tensorClone = tensor.clone().to(torch::kFloat32).div_(255.0);
+            
+        // 2.5 [Rows x Cols x Channels] to [Channels x Rows x Cols]
+        //tensorClone = tensorClone.permute({2, 0, 1}).contiguous().clone();
+        
+        // 3. Add batch dimension
+        tensorClone = tensorClone.unsqueeze(0);
+        
+        std::cout << "Tensor shape: " << tensorClone.sizes() << std::endl;
+        return tensorClone;
+    }
+
+    void processFiles(const std::vector<std::string>& filePathList) {
         std::cout << "Processing Image-files..." << std::endl;
         
         // Initialize variables: 
+        std::map<std::string, int> labelmap;
         const std::string modelName = "../mobilenetv3_large_Pretrained.pt";
         torch::Device device (torch::kCPU);
         
@@ -117,11 +154,7 @@ namespace ImageProc {
         // Disable LibTorch gradient computation
         torch::NoGradGuard no_grad;
         
-        // Display output heading: 
-        std::cout << "Image classification. Predicted image-labels: " << std::endl;
-        
         // for each file in filepathlist: 
-        size_t fileCount = 0;
         for (const std::string& filename : filePathList) {
             try {
                 // Read image: Width = columns, Height = rows
@@ -130,47 +163,29 @@ namespace ImageProc {
                 
                 // Preprocess image before running image classifier: 
                 cimg_library::CImg<unsigned char> processedImage = preprocessImage(image);
-                const int64_t cols = processedImage.width();
-                const int64_t rows = processedImage.height();
-                const int64_t channels = processedImage.spectrum();
                 
                 // Convert image to tensor
-                
-                // 1. create tensor
-                auto tensor = torch::from_blob(
-                    const_cast<unsigned char*>(processedImage.data()), 
-                    {channels, rows, cols}, 
-                    torch::TensorOptions()
-                    .dtype(torch::CppTypeToScalarType<unsigned char>::value)
-                    .device(torch::kCPU)
-                    );
-                
-                // 2. clone to ensure independent memory ownership:
-                torch::Tensor tensorClone = tensor.clone().to(torch::kFloat32).div_(255.0);
-                    
-                // 2.5 [Rows x Cols x Channels] to [Channels x Rows x Cols]
-                //tensor = tensor.permute({2, 0, 1}).contiguous().clone();
-                
-                // 3. Add batch dimension
-                tensorClone = tensorClone.unsqueeze(0);
-                
-                std::cout << "Tensor shape: " << tensorClone.sizes() << std::endl;
+                torch::Tensor input = CImg2tensor(processedImage);
                 
                 // classify image with Pytorch model
-                torch::Tensor output = model.forward({tensorClone}).toTensor();
+                torch::Tensor output = model.forward({input}).toTensor();
                 
-                // Get predicted class 
+                // Get predicted image-label
                 torch::Tensor pred = output.argmax(1);
                 
-                // Display class label
-                std::cout << filename << ": "
-                << pred.item<int>() << std::endl;
+                // Add image-label to map
+                labelmap[filename] = pred.item<int>();
             }
             catch(const std::exception& e) {
                 std::cerr << "Error: " << e.what() << '\n';
+                labelmap.clear();
                 return;
             }
         }
+        
+        // Display Classification results: 
+        printLabelMap(labelmap);
+        labelmap.clear();
     }
     
 }

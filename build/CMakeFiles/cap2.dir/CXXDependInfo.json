@@ -1,0 +1,102 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "",
+	"cxx-modules" : 
+	{
+		"CMakeFiles/cap2.dir/audioprocessing.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : 
+			[
+				"cxx_std_20"
+			],
+			"compile-options" : [],
+			"definitions" : 
+			[
+				"USE_DISTRIBUTED",
+				"USE_C10D_GLOO",
+				"USE_RPC",
+				"USE_TENSORPIPE"
+			],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/usr/include",
+				"/home/badblob/coding/cppCapstone2/./CImg",
+				"/home/badblob/coding/libtorch/libtorch/include",
+				"/home/badblob/coding/libtorch/libtorch/include/torch/csrc/api/include"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "",
+			"source" : "/home/badblob/coding/cppCapstone2/audioprocessing.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/cap2.dir/imageprocessing.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : 
+			[
+				"cxx_std_20"
+			],
+			"compile-options" : [],
+			"definitions" : 
+			[
+				"USE_DISTRIBUTED",
+				"USE_C10D_GLOO",
+				"USE_RPC",
+				"USE_TENSORPIPE"
+			],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/usr/include",
+				"/home/badblob/coding/cppCapstone2/./CImg",
+				"/home/badblob/coding/libtorch/libtorch/include",
+				"/home/badblob/coding/libtorch/libtorch/include/torch/csrc/api/include"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "",
+			"source" : "/home/badblob/coding/cppCapstone2/imageprocessing.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/badblob/coding/cppCapstone2/build",
+	"dir-cur-src" : "/home/badblob/coding/cppCapstone2",
+	"dir-top-bld" : "/home/badblob/coding/cppCapstone2/build",
+	"dir-top-src" : "/home/badblob/coding/cppCapstone2",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"/home/badblob/coding/cppCapstone2/./CImg",
+		"/home/badblob/coding/libtorch/libtorch/include",
+		"/home/badblob/coding/libtorch/libtorch/include/torch/csrc/api/include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/badblob/coding/cppCapstone2/build/CMakeFiles/cap2.dir",
+	"sources" : 
+	{
+		"CMakeFiles/cap2.dir/audioprocessing_impl.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/badblob/coding/cppCapstone2/audioprocessing_impl.cpp"
+		},
+		"CMakeFiles/cap2.dir/imageprocessing_impl.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/badblob/coding/cppCapstone2/imageprocessing_impl.cpp"
+		},
+		"CMakeFiles/cap2.dir/main.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/badblob/coding/cppCapstone2/main.cpp"
+		}
+	}
+}

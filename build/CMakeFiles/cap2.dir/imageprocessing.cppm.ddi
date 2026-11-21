@@ -1,0 +1,17 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/cap2.dir/imageprocessing.cppm.o",
+"provides": [
+{
+"logical-name": "imageprocessing",
+"is-interface": true
+}
+],
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

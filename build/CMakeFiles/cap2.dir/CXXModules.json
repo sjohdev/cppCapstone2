@@ -1,0 +1,29 @@
+{
+	"modules" : 
+	{
+		"audioprocessing" : 
+		{
+			"bmi" : "/home/badblob/coding/cppCapstone2/build/CMakeFiles/cap2.dir/audioprocessing.gcm",
+			"is-private" : false
+		},
+		"imageprocessing" : 
+		{
+			"bmi" : "/home/badblob/coding/cppCapstone2/build/CMakeFiles/cap2.dir/imageprocessing.gcm",
+			"is-private" : false
+		}
+	},
+	"references" : 
+	{
+		"audioprocessing" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/cap2.dir/audioprocessing.gcm"
+		},
+		"imageprocessing" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/cap2.dir/imageprocessing.gcm"
+		}
+	},
+	"usages" : {}
+}

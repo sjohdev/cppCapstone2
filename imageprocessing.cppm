@@ -6,6 +6,6 @@ module;
 export module imageprocessing;
 
 namespace ImageProc {
-    export void processFiles(std::vector<std::string>& filePathList);
+    export void processFiles(const std::vector<std::string>& filePathList);
 }
 

@@ -1,2 +1,7 @@
 # cppCapstone2
-Data processing command-line tool that can process .wav audio files and label .jpeg images using a Deep-Learning image classifier. Functions handling reading of .wav and .jpg files were written with the help of AI code generation and the image processing module utilizes two external libraries (CImg and LibTorch).
+Data processing command-line tool that can process .wav audio files and label .jpeg images using a Deep-Learning image classifier. 
+
+IMPORTANT: THis application does Not support greyscale jpeg images, only RGB images are supported.
+
+Usage: run the "cap2" executable in the "build" folder.
+

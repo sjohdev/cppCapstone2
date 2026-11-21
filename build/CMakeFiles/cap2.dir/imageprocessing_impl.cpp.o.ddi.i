@@ -423062,7 +423062,7 @@ namespace cimg_library {
         if (usage) {
           std::fprintf(cimg::output(),"\n %s%s%s",cimg::t_red(),cimg::basename(argv[0]),cimg::t_normal());
           std::fprintf(cimg::output(),": %s",usage);
-          std::fprintf(cimg::output()," (%s, %s)\n\n","Nov 21 2026","01:22:20");
+          std::fprintf(cimg::output()," (%s, %s)\n\n","Nov 21 2026","17:59:40");
         }
         if (_default) std::fprintf(cimg::output(),"%s\n",_default);
       }
@@ -423142,7 +423142,7 @@ namespace cimg_library {
     inline void info() {
       std::fprintf(cimg::output(),"\n %s%sCImg Library %u.%u.%u%s, compiled %s ( %s ) with the following flags:\n\n",
                    cimg::t_red(),cimg::t_bold(),408/100,(408/10)%10,408%10,
-                   cimg::t_normal(),"Nov 21 2026","01:22:20");
+                   cimg::t_normal(),"Nov 21 2026","17:59:40");
 
       std::fprintf(cimg::output(),"  > Operating System:         %s%-13s%s %s('cimg_OS'=%d)%s\n",
                    cimg::t_bold(),
@@ -480988,13 +480988,46 @@ namespace cil = cimg_library;
 # 72716 "/home/badblob/coding/cppCapstone2/./CImg/CImg.h"
 #pragma GCC diagnostic pop
 # 6 "/home/badblob/coding/cppCapstone2/imageprocessing_impl.cpp" 2
-# 14 "/home/badblob/coding/cppCapstone2/imageprocessing_impl.cpp"
+# 16 "/home/badblob/coding/cppCapstone2/imageprocessing_impl.cpp"
 module imageprocessing;
 
 
 
+namespace StringHelpers {
+    std::string getLastWord(const std::string& inputStr, const std::string& delimiter = "/") {
+        size_t pos;
+        size_t offset = 0;
+        size_t strLength = inputStr.size();
+        while (offset < strLength && (pos = inputStr.find(delimiter, offset)) != std::string::npos) {
+            offset = pos + 1;
+        }
+        return inputStr.substr(offset);
+    }
+
+    std::string getimlabel(int labelIndex) {
+
+        const std::string searchCommand = std::format(
+            "grep -w {}: ../../deeplearning/imagenet1000_clsidx_to_labels.txt > labels_log.txt",
+            labelIndex
+            );
+
+
+        bool procReady = not(std::system(nullptr) == 0);
+        if (procReady) {
+
+            std::system(searchCommand.c_str());
+        }
+
+
+        std::string resultStr;
+        std::ifstream readStream("labels_log.txt");
+        std::getline(readStream, resultStr);
+        return resultStr;
+    }
+}
 
 namespace ImageProc {
+
 
 
     template <typename T>
@@ -481081,11 +481114,12 @@ namespace ImageProc {
         return img;
     }
 
-    void printLabelMap(const std::map<std::string, int>& map) {
+    void printLabelMap(const std::map<std::string, std::string>& map) {
         std::cout << "\nImage classification complete. Predicted image-labels: \n" << std::endl;
+        size_t lineNr = 1;
         for (const auto& [key, value] : map) {
 
-            std::cout << key << ": " << value << std::endl;
+            std::cout << lineNr++ << ") " << key << ": " << value << std::endl;
         }
     }
 
@@ -481120,7 +481154,7 @@ namespace ImageProc {
         std::cout << "Processing Image-files..." << std::endl;
 
 
-        std::map<std::string, int> labelmap;
+        std::map<std::string, std::string> labelmap;
         const std::string modelName = "../mobilenetv3_large_Pretrained.pt";
         torch::Device device (torch::kCPU);
 
@@ -481152,7 +481186,10 @@ namespace ImageProc {
                 torch::Tensor pred = output.argmax(1);
 
 
-                labelmap[filename] = pred.item<int>();
+                int labelIndex = pred.item<int>();
+                std::string key = StringHelpers::getLastWord(filename, "/");
+                std::string value = StringHelpers::getimlabel(labelIndex);
+                labelmap[key] = value;
             }
             catch(const std::exception& e) {
                 std::cerr << "Error: " << e.what() << '\n';
@@ -481161,9 +481198,7 @@ namespace ImageProc {
             }
         }
 
-
         printLabelMap(labelmap);
         labelmap.clear();
     }
-
 }

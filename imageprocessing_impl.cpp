@@ -10,14 +10,49 @@ module;
 #include <exception>
 #include <cmath>
 #include <stdexcept>
+#include <format>
+#include <fstream>
 
 module imageprocessing;
 
-// Functions for reading image files and classifying them using a pre-trained Neural Network. 
-// NOTE: These functions was developed with the help of AI (chatGPT-6 Luna) 
+// Functions for reading image files and classifying them using a pre-trained Neural Network.  
+
+namespace StringHelpers {
+    std::string getLastWord(const std::string& inputStr, const std::string& delimiter = "/") {
+        size_t pos;
+        size_t offset = 0;
+        size_t strLength = inputStr.size();
+        while (offset < strLength && (pos = inputStr.find(delimiter, offset)) != std::string::npos) {
+            offset = pos + 1;
+        }
+        return inputStr.substr(offset);
+    }
+
+    std::string getimlabel(int labelIndex) {
+        // Call bash find method and store result in logfile: 
+        const std::string searchCommand = std::format(
+            "grep -w {}: ../../deeplearning/imagenet1000_clsidx_to_labels.txt > labels_log.txt", 
+            labelIndex
+            );
+            
+        // Make sure system process is available
+        bool procReady = not(std::system(nullptr) == 0);
+        if (procReady) {
+            // Run search command using the Unix terminal
+            std::system(searchCommand.c_str());
+        }
+        
+        // format searchresult: 
+        std::string resultStr;
+        std::ifstream readStream("labels_log.txt");
+        std::getline(readStream, resultStr);
+        return resultStr;
+    }
+}
 
 namespace ImageProc {
-
+    // NOTE: These functions were developed with the help of AI (chatGPT-6 Luna)
+    
     // Rotate a 2D image clockwise by 90 degrees.
     template <typename T>
     cimg_library::CImg<T> rotate90CW(const cimg_library::CImg<T>& src)
@@ -103,11 +138,12 @@ namespace ImageProc {
         return img;
     }
     
-    void printLabelMap(const std::map<std::string, int>& map) {
+    void printLabelMap(const std::map<std::string, std::string>& map) {
         std::cout << "\nImage classification complete. Predicted image-labels: \n" << std::endl;
+        size_t lineNr = 1;
         for (const auto& [key, value] : map) {
             // Display class label
-            std::cout << key << ": " << value << std::endl;
+            std::cout << lineNr++ << ") " << key << ": " << value << std::endl;
         }
     }
 
@@ -142,7 +178,7 @@ namespace ImageProc {
         std::cout << "Processing Image-files..." << std::endl;
         
         // Initialize variables: 
-        std::map<std::string, int> labelmap;
+        std::map<std::string, std::string> labelmap;
         const std::string modelName = "../mobilenetv3_large_Pretrained.pt";
         torch::Device device (torch::kCPU);
         
@@ -173,8 +209,11 @@ namespace ImageProc {
                 // Get predicted image-label
                 torch::Tensor pred = output.argmax(1);
                 
-                // Add image-label to map
-                labelmap[filename] = pred.item<int>();
+                // Add image-label description to map
+                int labelIndex = pred.item<int>();
+                std::string key = StringHelpers::getLastWord(filename, "/");
+                std::string value = StringHelpers::getimlabel(labelIndex);
+                labelmap[key] = value;
             }
             catch(const std::exception& e) {
                 std::cerr << "Error: " << e.what() << '\n';
@@ -182,11 +221,9 @@ namespace ImageProc {
                 return;
             }
         }
-        
         // Display Classification results: 
         printLabelMap(labelmap);
         labelmap.clear();
     }
-    
 }
 
